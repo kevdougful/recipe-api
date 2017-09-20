@@ -1,0 +1,29 @@
+{
+  "name": "recipeIngredient",
+  "plural": "recipeIngredients",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "recipeId": {
+      "type": "number",
+      "required": true
+    },
+    "ingredientId": {
+      "type": "number",
+      "required": true
+    },
+    "amount": {
+      "type": "number"
+    },
+    "amountUnit": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
